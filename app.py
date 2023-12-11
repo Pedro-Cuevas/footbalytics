@@ -167,12 +167,12 @@ layout_dashboard = html.Div(
                 html.Div(
                     dcc.Graph(id="figure_clean_sheets",
                               style={"display": "none"}),
-                    style={"width": "35%"}
+                    style={"width": "30%"}
                 ),
                 html.Div(
                     dcc.Graph(id="figure_wdl",
                               style={"display": "none"}),
-                    style={"width": "35%"}
+                    style={"width": "30%"}
                 )
             ],
             style={"text-align": "center",
@@ -183,12 +183,12 @@ layout_dashboard = html.Div(
                 html.Div(
                     dcc.Graph(id="figure_wld_heatmap",
                               style={"display": "none"}),
-                    style={"width": "35%"}
+                    style={"width": "30%"}
                 ),
                 html.Div(
                     dcc.Graph(id="figure_goals",
                               style={"display": "none"}),
-                    style={"width": "35%"}
+                    style={"width": "30%"}
                 )
             ],
             style={"text-align": "center",
