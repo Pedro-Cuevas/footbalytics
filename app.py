@@ -167,12 +167,12 @@ layout_dashboard = html.Div(
                 html.Div(
                     dcc.Graph(id="figure_clean_sheets",
                               style={"display": "none"}),
-                    style={"width": "40%"}
+                    style={"width": "35%"}
                 ),
                 html.Div(
                     dcc.Graph(id="figure_wdl",
                               style={"display": "none"}),
-                    style={"width": "40%"}
+                    style={"width": "35%"}
                 )
             ],
             style={"text-align": "center",
