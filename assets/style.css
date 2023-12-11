@@ -1,0 +1,74 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial;
+}
+
+/* Left side styles */
+.header-left {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 100px;
+}
+
+.header-logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.header-title {
+    display: inline-block;
+}
+
+.header-title:hover {
+    text-decoration: underline;
+}
+
+/* Right side styles */
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+/* Style for black links with underline on hover */
+a {
+    color: black;
+    text-decoration: none;
+    /* Remove default underline */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+
+/* Link styles */
+.nav-link {
+    margin-right: 30px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Title style */
+.title-text {
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+/* Text style */
+.text-content {
+    font-family: Arial, sans-serif;
+    text-align: justify;
+}
