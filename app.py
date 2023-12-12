@@ -162,46 +162,45 @@ layout_dashboard = html.Div(
                 "justify-content": "center",  # Center items horizontally
             }
         ),
-        html.Div(  # Figures of clean sheets and pie chart
+        html.Div(  # Parent container for both rows
+    children=[
+        # First row: Clean Sheets and Pie Chart
+        html.Div(
             children=[
                 html.Div(
                     dcc.Graph(id="figure_clean_sheets",
-                              style={"display": "none"}),
-                    style={"width": "30%"}
+                              style={"display": "inline-block"}),
+                    style={"flex": "1"}  # Adjust flex value as needed
                 ),
                 html.Div(
                     dcc.Graph(id="figure_wdl",
-                              style={"display": "none"}),
-                    style={"width": "30%"}
+                              style={"display": "inline-block"}),
+                    style={"flex": "1"}  # Adjust flex value as needed
                 )
             ],
-            style={"text-align": "center",
-                   "display" : "inline-block"}
+            style={"display": "flex", "justify-content": "center"}
         ),
-        html.Div(  # Heatmap and goals
+        
+        # Second row: Heatmap and Goals
+        html.Div(
             children=[
                 html.Div(
                     dcc.Graph(id="figure_wld_heatmap",
-                              style={"display": "none"}),
-                    style={"width": "30%"}
+                              style={"display": "inline-block"}),
+                    style={"flex": "1"}  # Adjust flex value as needed
                 ),
                 html.Div(
                     dcc.Graph(id="figure_goals",
-                              style={"display": "none"}),
-                    style={"width": "30%"}
+                              style={"display": "inline-block"}),
+                    style={"flex": "1"}  # Adjust flex value as needed
                 )
             ],
-            style={"text-align": "center",
-                   "display" : "inline-block"}
-        ),
-        html.Div( # Container for the cards
-            dcc.Graph(
-                id = "figure_cards",
-                style = {
-                    "display": "none"
-                }
-            )  
+            style={"display": "flex", "justify-content": "center"}
         )
+    ],
+    style={"text-align": "center"}
+)
+
     ],
     id = "dashboard_page",
     style = {
