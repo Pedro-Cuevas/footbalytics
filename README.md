@@ -10,8 +10,8 @@ Footbalytics es un proyecto innovador que integra una plataforma web desarrollad
 
 Secciones Principales:
 
-- Dashboard de Estadísticas: permite visualizar una amplia gama de estadísticas de cualquier equipo para la temporada 2022-2023.
-- Generador de Modelos de ML:
+- Dashboard de Estadísticas (Team analytics): permite visualizar una amplia gama de estadísticas de cualquier equipo para la temporada 2022-2023.
+- Generador de Modelos de ML (Machine learning models):
   - Descripción: permite al usuario elegir qué variables usar (de un dataset de estadísticas de jugadores de la FIFA), mientras visualiza un heatmap de correlaciones en tiempo real. Cuando ha elegido las variables, puede generar un modelo de regresión lineal y ver información sobre su desempeño y características.
   - Enfoque: Se ha optado por un modelo de Regresión Lineal debido a:
     - Su simplicidad y facilidad de comprensión, ideal para el usuario promedio, que es el público objetivo de la aplicación.
