@@ -20,7 +20,7 @@ Secciones Principales:
 Otros Comentarios
 Debido a las limitaciones de mi API, que permite un máximo de 100 llamadas diarias, he decidido emplear un conjunto de datos diferente para la generación del modelo de ML. Esta decisión fue necesaria para garantizar la viabilidad y el funcionamiento óptimo del proyecto.
 
-# Agradecimientos y Menciones
+## Agradecimientos y Menciones
 
 - **Dataset:** El preprocesamiento y la selección del conjunto de datos se basaron en el proyecto disponible en Kaggle: [Análisis de FIFA - Regresión en el Valor del Jugador](https://www.kaggle.com/code/phdoot2/fifa-analysis-regression-on-player-value)
   

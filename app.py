@@ -163,44 +163,53 @@ layout_dashboard = html.Div(
             }
         ),
         html.Div(  # Parent container for both rows
-    children=[
-        # First row: Clean Sheets and Pie Chart
-        html.Div(
             children=[
+                # First row: Clean Sheets and Pie Chart
                 html.Div(
-                    dcc.Graph(id="figure_clean_sheets",
-                              style={"display": "inline-block"}),
-                    style={"flex": "1"}  # Adjust flex value as needed
+                    children=[
+                        html.Div(
+                            dcc.Graph(id="figure_clean_sheets",
+                                    style={"display": "none"}),
+                            style={"flex": "1"}  # Adjust flex value as needed
+                        ),
+                        html.Div(
+                            dcc.Graph(id="figure_wdl",
+                                    style={"display": "none"}),
+                            style={"flex": "1"}  # Adjust flex value as needed
+                        )
+                    ],
+                    style={"display": "flex", "justify-content": "center"}
+                ),    
+                # Second row: Heatmap and Goals
+                html.Div(
+                    children=[
+                        html.Div(
+                            dcc.Graph(id="figure_wld_heatmap",
+                                    style={"display": "none"}),
+                            style={"flex": "1"}  # Adjust flex value as needed
+                        ),
+                        html.Div(
+                            dcc.Graph(id="figure_goals",
+                                    style={"display": "none"}),
+                            style={"flex": "1"}  # Adjust flex value as needed
+                        )
+                    ],
+                    style={"display": "flex", "justify-content": "center"}
                 ),
+                # Third row: Cards
                 html.Div(
-                    dcc.Graph(id="figure_wdl",
-                              style={"display": "inline-block"}),
-                    style={"flex": "1"}  # Adjust flex value as needed
+                    children=[
+                        html.Div(
+                            dcc.Graph(id="figure_cards",
+                                    style={"display": "none"}),
+                            style={"flex": "1"}  # Adjust flex value as needed
+                        )
+                    ],
+                    style={"display": "flex", "justify-content": "center"}
                 )
             ],
-            style={"display": "flex", "justify-content": "center"}
+            style={"text-align": "center"}
         ),
-        
-        # Second row: Heatmap and Goals
-        html.Div(
-            children=[
-                html.Div(
-                    dcc.Graph(id="figure_wld_heatmap",
-                              style={"display": "inline-block"}),
-                    style={"flex": "1"}  # Adjust flex value as needed
-                ),
-                html.Div(
-                    dcc.Graph(id="figure_goals",
-                              style={"display": "inline-block"}),
-                    style={"flex": "1"}  # Adjust flex value as needed
-                )
-            ],
-            style={"display": "flex", "justify-content": "center"}
-        )
-    ],
-    style={"text-align": "center"}
-)
-
     ],
     id = "dashboard_page",
     style = {
