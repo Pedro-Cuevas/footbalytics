@@ -6,6 +6,8 @@
 
 Footbalytics es un proyecto innovador que integra una plataforma web desarrollada con Dash, enfocada en presentar estadísticas detalladas de equipos de fútbol. Además, ofrece una herramienta única para generar modelos de Machine Learning (ML) personalizados para jugadores, basados en datos de la temporada 2022-2023.
 
+El link de la app desplegada es: [https://footbalytics-ee09af196768.herokuapp.com/](https://footbalytics-ee09af196768.herokuapp.com/)
+
 ## Consideraciones de Diseño
 
 Secciones Principales:

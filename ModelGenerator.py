@@ -2,7 +2,7 @@ import pandas as pd
 
 class ModelGenerator():
     def __init__(self):
-        self.data = pd.read_csv('data_regression.csv').drop('nationality',axis=1)
+        self.data = pd.read_csv('data_regression.csv').drop(['nationality', 'positions'],axis=1)
 
     # returns numeric columns
     def get_numeric_columns(self):

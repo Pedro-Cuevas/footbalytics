@@ -293,7 +293,6 @@ layout_machine_learning = html.Div(
                     html.Li("Age: Age of the player."),
                     html.Li("Height (cm): Player's height in centimeters."),
                     html.Li("Weight (kg): Player's weight in kilograms."),
-                    html.Li("Positions: Positions the player can play."),
                     html.Li("Overall Rating: Overall rating of the player in FIFA."),
                     html.Li("Value (Euro): Market value of the player in euros."),
                     html.Li("Wage (Euro): Weekly wage of the player in euros."),
